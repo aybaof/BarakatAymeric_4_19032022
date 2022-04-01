@@ -306,6 +306,7 @@ a:hover {
     margin: 0 5px 0 0;
     display: inline;
     width: 100%;
+    height: 40px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -855,13 +856,13 @@ blockquote footer {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -879,10 +880,6 @@ blockquote footer {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -891,8 +888,6 @@ blockquote footer {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1046,4 +1041,9 @@ blockquote footer {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.image-resize-mode {
+    width:100px; 
+    height:100px;
 }
